@@ -39,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
         webSettings.setJavaScriptEnabled(true);
+        webView.getSettings().setBuiltInZoomControls(true);
+        webView.getSettings().setDisplayZoomControls(false);
         registerForContextMenu(webView);
     }
 
