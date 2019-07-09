@@ -1,6 +1,9 @@
 package com.example.ikephuhayi.datalibrary;
 
 import android.app.DownloadManager;
+import android.content.ClipboardManager;
+import android.content.ClipData;
+import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -80,6 +83,24 @@ public class MainActivity extends AppCompatActivity {
 
                     return false;
 
+                }
+
+            });
+
+        }
+
+        else if (webView.getHitTestResult().getType() == WebView.HitTestResult.UNKNOWN_TYPE) {
+
+            contextMenu.add(0, 1, 0, "Copy Page Url").setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+
+                @Override
+                public boolean onMenuItemClick(MenuItem menuItem) {
+
+                    ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+                    ClipData clip = ClipData.newPlainText("", webView.getUrl());
+                    clipboard.setPrimaryClip(clip);
+
+                    return false;
                 }
 
             });
