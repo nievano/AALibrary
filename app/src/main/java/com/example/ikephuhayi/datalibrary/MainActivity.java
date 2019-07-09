@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (webView.getHitTestResult().getType() == WebView.HitTestResult.IMAGE_TYPE || webView.getHitTestResult().getType() == WebView.HitTestResult.SRC_IMAGE_ANCHOR_TYPE) {
 
-            contextMenu.add(0, 1, 0, "Save Image").setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+            contextMenu.add(0, 1, 0, "Download Image").setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
 
                 @Override
                 public boolean onMenuItemClick(MenuItem menuItem) {
