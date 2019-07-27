@@ -1,4 +1,4 @@
-package com.example.ikephuhayi.datalibrary;
+package com.amityarenalibrary.ikephuhayi.datalibrary;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

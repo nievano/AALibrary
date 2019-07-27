@@ -1,4 +1,4 @@
-package com.example.ikephuhayi.datalibrary;
+package com.amityarenalibrary.ikephuhayi.datalibrary;
 
 import android.app.DownloadManager;
 import android.content.ClipboardManager;

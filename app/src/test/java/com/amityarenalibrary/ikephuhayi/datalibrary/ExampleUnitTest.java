@@ -1,4 +1,4 @@
-package com.example.ikephuhayi.datalibrary;
+package com.amityarenalibrary.ikephuhayi.datalibrary;
 
 import org.junit.Test;
 
